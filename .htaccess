@@ -1,0 +1,49 @@
+# BEGIN: Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+# BEGIN: Block Aggressive Crawlers & SEO Bots
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_USER_AGENT} MJ12bot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} AhrefsBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} SemrushBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} DotBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} YandexBot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} Baiduspider [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+# BEGIN: Prevent Hotlinking of Images
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !^https://(www\.)?shahambulanceservice\.in [NC]
+  RewriteRule \.(jpg|jpeg|png|gif|bmp)$ - [F,NC]
+</IfModule>
+
+# BEGIN: Leverage Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# BEGIN: GZIP Compression (if enabled on server)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
