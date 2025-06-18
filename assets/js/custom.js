@@ -34,6 +34,23 @@ if ($(".preloader-close").length) {
   });
 }
 
+// Header fixed JS and Scroll to Top
+function headerStyle() {
+  if ($(".main-header").length) {
+    var windowpos = $(window).scrollTop();
+    var siteHeader = $(".main-header");
+    var scrollLink = $(".scroll-top");
+    if (windowpos >= 200) {
+      siteHeader.addClass("fixed-header");
+      scrollLink.fadeIn(300);
+    } else {
+      siteHeader.removeClass("fixed-header");
+      scrollLink.fadeOut(300);
+    }
+  }
+}
+headerStyle();
+
 //Mobile Nav Hide Show
 if ($(".mobile-menu").length) {
   $(".mobile-menu .menu-box").mCustomScrollbar();
@@ -114,23 +131,6 @@ if ($(".quantity-spinner").length) {
     verticalbuttons: true,
   });
 }
-
-//Update Header Style and Scroll to Top
-function headerStyle() {
-  if ($(".main-header").length) {
-    var windowpos = $(window).scrollTop();
-    var siteHeader = $(".main-header");
-    var scrollLink = $(".scroll-top");
-    if (windowpos >= 350) {
-      siteHeader.addClass("fixed-header");
-      scrollLink.fadeIn(300);
-    } else {
-      siteHeader.removeClass("fixed-header");
-      scrollLink.fadeOut(300);
-    }
-  }
-}
-headerStyle();
 
 // Isotop Layout
 function isotopeBlock() {
