@@ -15,7 +15,7 @@
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 15px 0px 10px 0px;
+  padding: 15px 0px 0px 0px;
   z-index: 1;
 }
 .header-top .left_side {
@@ -165,7 +165,7 @@
 .main-menu .navigation > .dropdown > ul {
   position: absolute;
   top: 30px;
-  width: 250px;
+  width: 280px;
   padding: 20px 0px 20px;
   background-color: #ffffff;
   opacity: 0;
