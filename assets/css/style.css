@@ -300,7 +300,7 @@ p {
   text-align: center;
 }
 .service-section .service-top h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .service-section .service-top p {
   font-size: 16px;
@@ -584,7 +584,7 @@ p {
     transform: translateY(0);
   }
 }
-.process-text{
+.process-text {
   text-align: center;
 }
 .process-text h2 {
@@ -606,6 +606,74 @@ p {
 
 /*=============================================
     Process Section End
+=============================================*/
+
+/*=============================================
+    Choose Section End
+=============================================*/
+.choose-section .top-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.choose-section .top-section h2 {
+  margin-bottom: 10px;
+}
+
+.choose-section .bottom-section {
+  box-shadow: 0px 4px 12px 0px rgba(206, 196, 196, 0.45);
+  border-radius: 10px;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background-color: #f0f0f0; */
+}
+.choose-section .bottom-section .cont {
+  text-align: center;
+  margin-top: 40px;
+}
+.choose-section .bottom-section .cont .icon {
+  height: 50px;
+}
+.choose-section .bottom-section .cont::before {
+  content: "";
+  height: 60px;
+  width: 60px;
+  top: -10px;
+  position: absolute;
+  left: 42%;
+  background-color: #ee296a;
+  border-radius: 50%;
+  transition: all 500ms ease;
+  z-index: 1;
+  opacity: 0;
+}
+.choose-section .bottom-section .cutom-border {
+  border-right: 2px solid var(--thm-base);
+}
+.choose-section .bottom-section i {
+  font-size: 50px;
+  color: var(--thm-base);
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  transition: all 500ms ease;
+}
+.choose-section .bottom-section .cont:hover i {
+  font-size: 40px;
+  color: var(--thm-black);
+}
+.choose-section .bottom-section .cont:hover::before {
+  opacity: 1;
+}
+.choose-section .bottom-section .cont h3 {
+  font-size: 22px;
+  color: var(--thm-base);
+  margin: 10px 0px 5px 0px;
+}
+
+/*=============================================
+    Choose Section End
 =============================================*/
 
 @media only screen and (max-width: 1366px) {
@@ -8371,527 +8439,6 @@ bbb.now-in-view {
   position: relative;
   width: 100%;
   height: 550px;
-}
-/*** 
-=============================================
-    Features Style1 Content Css
-=============================================
-***/
-.features-style1-area {
-  position: relative;
-  display: block;
-  z-index: 11;
-}
-
-.features-style1-area::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 95px;
-  background: #f2f3fa;
-  z-index: -1;
-}
-
-.features-style1__content {
-  position: relative;
-  display: block;
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-  z-index: 10;
-}
-
-.features-style1__content ul {
-  position: relative;
-  display: flex;
-  background: #ffffff;
-  z-index: 10;
-}
-
-.features-style1__content ul li {
-  position: relative;
-  display: block;
-  padding: 0 60px;
-  padding-top: 60px;
-  padding-bottom: 50px;
-  max-width: 33.333333%;
-  width: 100%;
-}
-
-.features-style1__content ul li:before {
-  content: "";
-  position: absolute;
-  top: 60px;
-  right: 0;
-  bottom: 60px;
-  background: #dcdeee;
-  width: 1px;
-}
-
-.features-style1__content ul li:last-child:before {
-  display: none;
-}
-
-.single-features-style1 {
-  position: relative;
-  display: block;
-}
-
-.single-features-style1 .icon-holder {
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 60px;
-}
-
-.single-features-style1 .icon-holder .box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(var(--thm-base-rgb), 0.05);
-  border-radius: 50%;
-  transition: all 500ms ease;
-}
-
-.single-features-style1:hover .icon-holder .box {
-  background-color: rgba(var(--thm-base-rgb), 0.95);
-  transform: scale(1.3);
-}
-
-.single-features-style1 .icon-holder span:before {
-  position: relative;
-  display: inline-block;
-  color: var(--thm-base);
-  font-size: 60px;
-  line-height: 60px;
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
-}
-
-.single-features-style1:hover .icon-holder span:before {
-  color: var(--thm-black);
-  transform: scale(0.9);
-}
-
-.single-features-style1 .text-holder {
-  position: relative;
-  display: block;
-  padding-top: 21px;
-}
-
-.single-features-style1 .text-holder h3 {
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0 0 21px;
-}
-
-.single-features-style1 .text-holder h3 a {
-  color: var(--thm-primary);
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.single-features-style1 .text-holder h3 a:hover {
-  color: var(--thm-base);
-}
-
-.single-features-style1 .text-holder p {
-  margin: 0;
-}
-
-/*** 
-=============================================
-    Features Style2 Area Css
-=============================================
-***/
-.features-style2-area {
-  position: relative;
-  display: block;
-  background: #ffffff;
-  padding: 120px 0 70px;
-  z-index: 10;
-}
-
-.features-style2-area.gray-bg {
-  background: #f2f3fa;
-}
-
-.features-style2__title {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  padding-bottom: 48px;
-}
-
-.features-style2__title .sec-title {
-  position: relative;
-  display: block;
-  padding-bottom: 0;
-}
-
-.features-style2__title .text {
-  position: relative;
-  display: block;
-  max-width: 470px;
-  width: 100%;
-}
-
-.features-style2__title .text p {
-  margin: 0;
-}
-
-.features-style2__content {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.single-features-style2 {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 25%;
-  padding: 0 50px;
-  margin-bottom: 50px;
-}
-
-.single-features-style2:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 10px;
-  width: 1px;
-  background: #dcdeee;
-}
-
-.single-features-style2:last-child:before {
-  display: none;
-}
-
-.single-features-style2 .icon-holder {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 105px;
-  height: 105px;
-  background: #f2f3fa;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.single-features-style2.white-bg .icon-holder {
-  background: #ffffff;
-}
-
-.single-features-style2 .icon-holder:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: var(--thm-base);
-  z-index: -1;
-  transform: scaleX(0);
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.single-features-style2:hover .icon-holder:before {
-  transform: scaleX(1);
-  transition: all 500ms linear;
-  transition-delay: 0.1s;
-}
-
-.single-features-style2 .icon-holder span:before {
-  position: relative;
-  display: inline-block;
-  color: var(--thm-base);
-  font-size: 60px;
-  line-height: 60px;
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.single-features-style2:hover .icon-holder span:before {
-  color: #ffffff;
-  transform: scale(0.8);
-}
-
-.single-features-style2 .text-holder {
-  position: relative;
-  display: block;
-  padding-top: 25px;
-}
-
-.single-features-style2 .text-holder h3 {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  margin: 0 0 15px;
-}
-
-.single-features-style2 .text-holder h3 a {
-  color: #001789;
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.single-features-style2 .text-holder h3 a:hover {
-  color: var(--thm-base);
-}
-
-.single-features-style2 .text-holder p {
-  margin: 0;
-}
-
-/*** 
-=============================================
-    Features Style3 Area Css
-=============================================
-***/
-.features-style3-area {
-  position: relative;
-  display: block;
-  margin-top: -60px;
-  z-index: 10;
-}
-
-.features-style3__box {
-  position: relative;
-  display: block;
-  background: var(--thm-base);
-  padding: 60px 60px 50px;
-}
-
-.features-style3__box .img-holder {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.features-style3__box .img-holder img {
-  width: 100%;
-}
-
-.features-style3__box .text-holder {
-  position: relative;
-  display: block;
-  padding-top: 31px;
-}
-
-.features-style3__box .text-holder h2 {
-  color: #fff;
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 700;
-  margin: 0 0 11px;
-}
-
-.features-style3__box .text-holder p {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 34px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.features-style3__right-box {
-  position: relative;
-  display: block;
-}
-
-.features-style3-single-box {
-  position: relative;
-  display: block;
-  background: #ffffff;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
-  padding: 63px 60px 50px;
-  transition: all 100ms linear;
-  transition-delay: 0.1s;
-}
-
-.features-style3-single-box:hover {
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.15);
-}
-
-.features-style3-single-box .icon {
-  position: relative;
-  display: block;
-  padding-bottom: 13px;
-}
-
-.features-style3-single-box .icon span:before {
-  position: relative;
-  display: inline-block;
-  color: var(--thm-base);
-  font-size: 60px;
-  line-height: 60px;
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.features-style3-single-box:hover .icon span:before {
-  color: var(--thm-primary);
-  transform: scale(1.1);
-}
-
-.features-style3-single-box .text {
-  position: relative;
-  display: block;
-}
-
-.features-style3-single-box .text h3 {
-  margin: 0 0 20px;
-}
-
-.features-style3-single-box .text p {
-  margin: 0;
-}
-
-.features-style3-single-box .btn-box {
-  position: relative;
-  display: block;
-  padding-top: 25px;
-}
-
-.features-style3-single-box .btn-box a {
-  color: var(--thm-base);
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  transition: all 200ms linear;
-  transition-delay: 0.1s;
-}
-
-.features-style3-single-box .btn-box a:hover {
-  color: var(--thm-primary);
-  letter-spacing: 0.2em;
-}
-
-/*** 
-=============================================
-    Features Style4 Area Css
-=============================================
-***/
-.features-style4-area {
-  position: relative;
-  display: block;
-  background: #ffffff;
-  padding: 120px 0px 120px;
-  border-bottom: 1px solid #dcdeee;
-  z-index: 10;
-}
-
-.features-style4__content {
-  position: relative;
-  display: block;
-  max-width: 500px;
-  width: 100%;
-}
-
-.features-style4__content .sec-title {
-  padding-bottom: 28px;
-}
-
-.features-style4__content .inner-content {
-  position: relative;
-  display: block;
-}
-
-.features-style4__content .inner-content .text {
-  position: relative;
-  display: block;
-  margin-bottom: 39px;
-}
-
-.features-style4__content .inner-content .text p {
-  margin: 0;
-}
-
-.features-style4__content .inner-content .single-box {
-  position: relative;
-  display: block;
-}
-
-.features-style4__content .inner-content .single-box .icon {
-  position: relative;
-  display: block;
-  margin-bottom: 9px;
-}
-
-.features-style4__content .inner-content .single-box .icon span:before {
-  position: relative;
-  display: inline-block;
-  color: var(--thm-base);
-  font-size: 65px;
-  line-height: 65px;
-}
-
-.features-style4__content .inner-content .single-box .inner-title {
-  position: relative;
-  display: block;
-}
-
-.features-style4__content .inner-content .single-box .inner-title h3 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 22px;
-}
-
-.features-style4__content .inner-content .single-box .inner-title p {
-  margin: 0;
-}
-
-.features-style4__image-box {
-  position: relative;
-  display: block;
-  margin-top: -200px;
-}
-
-.features-style4__image-box .top-text {
-  position: relative;
-  display: block;
-  background: var(--thm-base);
-  padding: 36px 0px 35px;
-}
-
-.features-style4__image-box .top-text::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10px;
-  background: #ffffff;
-  content: "";
-}
-
-.features-style4__image-box .top-text h3 {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 34px;
-  font-weight: 700;
-}
-
-.features-style4__image-box .inner-img-box {
-  position: relative;
-  display: block;
-}
-
-.features-style4__image-box .inner-img-box img {
-  width: 100%;
 }
 
 /*** 
