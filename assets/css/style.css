@@ -912,3 +912,88 @@ p {
     FAQ Section End
 =============================================
 ***/
+
+@media screen and (max-width: 1025px) {
+  .spacing {
+    padding: 80px 30px;
+  }
+  .bg h2 {
+    font-size: 35px;
+    width: 90%;
+  }
+  .bg p {
+    width: 80%;
+  }
+  .custom-width-30 {
+    width: 48%;
+  }
+  .about-section .about-container {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .about-section .about-left {
+    padding: 0px;
+  }
+  .about-section .about-left::before {
+    right: -5px;
+  }
+  .about-section .about-container {
+    gap: 40px;
+  }
+  .about-section .about-right p {
+    font-size: 16px;
+  }
+  .about-section {
+    padding-bottom: 0px;
+  }
+  .highlight-section .bg-color {
+    width: 100%;
+  }
+  .highlight-section .bg-color > .col {
+    flex-wrap: wrap;
+    gap: 30px 0px;
+  }
+  .highlight-section .bg-color .md-border-0 {
+    border-right: 0px;
+  }
+  .process-carousel .carousel-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 0px;
+  }
+  .choose-section .bottom-section {
+    justify-content: center;
+  }
+  .equipment-section .top-section,
+  .choose-section .top-section,
+  .faq-section .faq-top {
+    margin-bottom: 30px;
+  }
+  .choose-section .bottom-section .cont::before {
+    left: 41%;
+  }
+  .equipment-section .bottom-section {
+    gap: 25px 15px;
+  }
+  .highlight-section-1 .map-box {
+    right: 0px;
+    overflow: hidden;
+  }
+  @keyframes float-bob {
+    0% {
+      transform: translateX(50px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  .highlight-section-1 .ambulance-animate::before {
+    position: relative;
+  }
+  .highlight-section-1 .text-section {
+    margin-top: 30px;
+  }
+}

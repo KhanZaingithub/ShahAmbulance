@@ -1,7 +1,7 @@
 /*==============================================
     Main Header Css        
 ===============================================*/
-.main-header {
+.header-area {
   position: relative;
   left: 0px;
   top: 0px;
@@ -417,10 +417,303 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+/* Mobile Menu */
+/*================================ 
+    - Mobile Menu Overlay Css
+==================================*/
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  background: #e51d3a;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.6rem;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-toggle:hover {
+  background: #e51d3a;
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 10px;
+}
+
+.hamburger span:first-child {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+  width: 70%;
+}
+
+.hamburger span:last-child {
+  top: 18px;
+}
+/* Mobile Menu Active State */
+.nav-active .hamburger span:first-child {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.nav-active .hamburger span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.nav-active .hamburger span:last-child {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+/*================================ 
+    - Mobile Menu Overlay Css
+==================================*/
+.mobile-menu-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+}
+.mobile-menu-overlay__inner {
+  transform: translateX(-120%);
+  width: 60%;
+  height: 100%;
+  float: left;
+  background: #e51d3a;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  overflow-y: auto;
+}
+
+.mobile-menu-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+.mobile-menu-overlay.active .mobile-menu-overlay__inner {
+  transform: translateX(0%);
+}
+
+.mobile-menu-overlay__header {
+  background-color: #ffffff;
+  padding: 15px 0px;
+}
+.mobile-menu-overlay a {
+  color: #fff;
+}
+
+.navigation-menu > ul > li {
+  margin: 0px 20px 0px 0px;
+}
+.mobile-navigation-icon {
+  width: 24px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* mobile close icon */
+.mobile-menu-overlay__header .mobile-navigation-close-icon {
+  position: relative;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+.mobile-menu-overlay__header .mobile-navigation-close-icon:before {
+  position: absolute;
+  top: 23px;
+  left: 8px;
+  content: "";
+  width: 24px;
+  height: 3px;
+  background: #e51d3a;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.mobile-menu-overlay__header .mobile-navigation-close-icon:after {
+  position: absolute;
+  top: 23px;
+  left: 8px;
+  content: "";
+  width: 24px;
+  height: 3px;
+  background: #e51d3a;
+  transform-origin: 50% 50%;
+  transform: rotate(-45deg);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.mobile-menu-overlay__body {
+  padding: 20px 20px;
+}
+.mobile-menu-overlay__body .offcanvas-navigation > ul > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mobile-menu-overlay__body .offcanvas-navigation > ul > li:first-child a {
+  padding: 10px 0px 5px 0px;
+}
+.mobile-menu-overlay__body .offcanvas-navigation > ul > li > a,
+.number-section-mob {
+  display: block;
+  color: #ffffff;
+  padding: 20px 0px 5px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.mobile-menu-overlay__body .offcanvas-navigation > ul > li:last-child {
+  border-bottom: 0;
+}
+
+.mobile-menu-overlay__body .offcanvas-navigation > ul > li.has-children {
+  position: relative;
+}
+
+/* dropdown icons */
+.mobile-menu-overlay__body
+  .offcanvas-navigation
+  > ul
+  > li.has-children.active
+  .menu-expand:before {
+  content: "\f106";
+}
+.mobile-menu-overlay__body
+  .offcanvas-navigation
+  > ul
+  > li.has-children
+  .menu-expand {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.mobile-menu-overlay__body
+  .offcanvas-navigation
+  > ul
+  > li.has-children
+  .menu-expand:before {
+  content: "\f107";
+  font-size: 18px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+.mobile-menu-overlay__body
+  .offcanvas-navigation
+  > ul
+  > li.has-children
+  .sub-menu {
+  padding: 12px 0 12px 10px;
+}
+
+.mobile-menu-overlay__body
+  .offcanvas-navigation
+  > ul
+  > li.has-children
+  .sub-menu
+  li
+  a {
+  display: block;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+/* Mobile Mavigation icon */
+.mobile-navigation-icon {
+  width: 24px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Hamburger icon */
+.mobile-navigation-icon i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #e51d3a;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.mobile-navigation-icon i:before {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e51d3a;
+  content: "";
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.mobile-navigation-icon i:after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e51d3a;
+  content: "";
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@media screen and (max-width: 1025px) {
   .handle-preloader .animation-preloader .spinner {
     height: 8em;
     width: 8em;
+  }
+  .header-bottom .header-left,
+  .social-icons {
+    display: none;
+  }
+  .header-spacing {
+    padding: 0px 30px;
+  }
+  .header-cta,
+  .sticky-header {
+    display: none !important;
+  }
+  .header-top .left_side {
+    justify-content: center;
+  }
+  .header-top .left_side ul {
+    gap: 30px;
+  }
+  .mobile-menu-overlay {
+    left: -12px;
   }
 }
 

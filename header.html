@@ -1,9 +1,8 @@
 <!-- Service Slider -->
 <link rel="stylesheet" href="header.css" />
 
-<!-- preloader end -->
 <!-- header -->
-<div class="container-fluid main-header">
+<div class="container-fluid header-area header-area--default">
   <div class="container header-spacing">
     <div class="row">
       <div class="col-12 header-top">
@@ -78,10 +77,21 @@
         <!--Start Header-->
         <div class="outer-box">
           <!-- Site logo -->
-          <div class="col-2 logo p-0">
+          <div class="col-md-6 col-lg-2 logo p-0">
             <a href="">
               <img class="img-fluid" src="images/Home/logo.png" alt="" />
             </a>
+          </div>
+
+          <!-- hamburger -->
+          <!-- Mobile Menu Box -->
+          <div class="header-right-box d-block d-xl-none">
+            <!-- Mobile Menu hamburger -->
+            <div
+              class="mobile-navigation-icon d-block d-xl-none mobile-menu-trigger"
+            >
+              <i></i>
+            </div>
           </div>
           <!--navigation-->
           <div class="col-7 header-left">
@@ -179,7 +189,7 @@
             <!-- Main Menu End-->
           </div>
           <!-- button -->
-          <div class="col-3 p-0 d-flex justify-content-end">
+          <div class="col-3 p-0 d-flex justify-content-end header-cta">
             <a
               class="btn-style"
               href="#"
@@ -192,21 +202,152 @@
         </div>
         <!--End header-->
       </div>
+      <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__inner">
+          <div class="mobile-menu-overlay__header">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <div class="col-md-6 col-8">
+                  <!-- logo -->
+                  <div class="logo">
+                    <a href="/">
+                      <img
+                        src="/images/Home/jan-sahara-logo.webp"
+                        class="img-fluid"
+                        alt="Jan Sahara Ambulance"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-4">
+                  <!-- mobile menu content -->
+                  <div class="mobile-menu-content text-end">
+                    <span
+                      class="mobile-navigation-close-icon mobile-menu-close-trigger"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu-overlay__body">
+            <nav class="offcanvas-navigation">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about.html">About us</a>
+                </li>
+                <li class="has-children">
+                  <a href="/service.html">Services</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/road-ambulance-service.html"
+                        ><span>Road Ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/train-ambulance-service.html"
+                        ><span>Train ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/air-ambulance-service.html"
+                        ><span>Air Ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/cardiac-ambulance-service.html"
+                        ><span>Cardiac Ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/event-ambulance-service.html"
+                        ><span>Ambulance For Events</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/emergency-ambulance-service.html"
+                        ><span>Ambulance For Emergency</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/dead-body-ambulance-service.html"
+                        ><span>Dead Body Ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/outstation-ambulance-service.html"
+                        ><span>Outstation Ambulance</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="/antim-sanskar-seva.html"
+                        ><span>Antim Sanskar Seva</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Ambulance Services</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/book-ambulance.html">Book Ambulance</a>
+                    </li>
+                    <li>
+                      <a href="/pay-online.html">Pay Online</a>
+                    </li>
+
+                    <li>
+                      <a href="/images/Brouchers/Broucher.pdf" target=""
+                        >Download Cataglog</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="contact-us.html">Contact</a>
+                </li>
+                <div class="d-flex number-section-mob gap-4">
+                  <li>
+                    <a href="tel:9820700800"
+                      ><i class="fas fa-phone fa-flip-horizontal"></i>
+                      9820700800</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="tel:9320800900"
+                      ><i class="fas fa-phone fa-flip-horizontal"></i>
+                      9320800900</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!--Sticky Header-->
-  <div class="sticky-header">
-    <div class="container">
+  <div class="sticky-header header-area">
+    <div class="container header-spacing">
       <div class="row">
         <!--Logo-->
-        <div class="col-2 logo p-0">
+        <div class="col-md-6 col-2 logo p-0">
           <a href="">
             <img class="img-fluid" src="images/Home/logo.png" alt="" />
           </a>
         </div>
+
         <!--Right Col-->
-        <div class="col-10 justify-content-center d-flex align-items-center">
+        <div
+          class="col-10 justify-content-center d-flex align-items-center d-md-none"
+        >
           <!-- Main Menu -->
           <nav class="main-menu">
             <ul class="navigation">
@@ -297,8 +438,10 @@
 
   <!--End Sticky Header-->
 
-  <!-- Mobile Menu  -->
+  <!-- mobile menu slider start -->
 
+  <!-- Header Bottom Wrap End -->
   <!-- End Mobile Menu -->
 </div>
+
 <script src="header.js"></script>
