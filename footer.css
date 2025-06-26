@@ -57,9 +57,30 @@
 .copyright a:hover {
   color: #034925 !important;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+  .footer-top .service-left,
+  .footer-top .service-left-md {
+    padding-left: 50px;
+  }
+
+  .footer-logo p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .copyright {
+    margin: 0px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .footer-logo img {
-    width: 80%;
+    width: 60%;
   }
   .footer-logo p {
     margin-top: 10px;
@@ -83,19 +104,5 @@
   }
   .copyright .social-icons {
     margin: 10px 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1025px) {
-  .footer-top .service-left,
-  .footer-top .service-left-md {
-    padding-left: 50px;
-  }
-
-  .footer-logo p {
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  .copyright {
-    margin: 0px;
   }
 }
