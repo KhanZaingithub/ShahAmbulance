@@ -1000,12 +1000,69 @@ p {
 
 @media screen and (max-width: 767px) {
   .spacing {
-    padding: 60px 10px;
+    padding: 60px 5px;
   }
   .btn-style {
     padding: 0px 20px;
   }
+  .service-section .service-cont {
+    width: 92% !important;
+  }
   .custom-width-30 {
-    width: 92%;
+    width: 100%;
+  }
+  .about-section .about-left img {
+    height: 100%;
+  }
+  .about-section .about-left .establish {
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+  }
+  .about-section .about-left .establish h2 {
+    font-size: 30px;
+  }
+  .highlight-section {
+    padding-top: 0px;
+  }
+  .highlight-section .bg-color {
+    padding: 20px 10px;
+  }
+  .highlight-section .counter-cont h5,
+  .highlight-section .text-center h5 {
+    font-size: 16px;
+  }
+  .choose-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .choose-section .bottom-section i {
+    font-size: 40px;
+  }
+  .choose-section .bottom-section .cont:hover i {
+    font-size: 30px;
+  }
+  .choose-section .bottom-section .cont::before {
+    left: 43%;
+    width: 50px;
+    height: 50px;
+  }
+  .highlight-section-1 {
+    margin: 80px 0px;
+  }
+  .faq-section .faq-top h2 {
+    font-size: 25px;
+  }
+  .accordion {
+    padding: 30px 15px;
+  }
+  .accordion button,
+  .accordion-button:not(.collapsed) {
+    padding: 20px 10px 20px 0px;
+    font-size: 18px;
+  }
+  .accordion-body {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
   }
 }
