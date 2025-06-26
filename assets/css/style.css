@@ -1000,6 +1000,12 @@ p {
 
 @media screen and (max-width: 767px) {
   .spacing {
-    padding: 60px 15px;
+    padding: 60px 0px;
+  }
+  .btn-style {
+    padding: 0px 20px;
+  }
+  .custom-width-30 {
+    width: 92%;
   }
 }
