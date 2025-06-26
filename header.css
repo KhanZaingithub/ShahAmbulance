@@ -713,11 +713,14 @@
     gap: 30px;
   }
   .mobile-menu-overlay {
-    left: -12px;
+    padding: 0px;
+  }
+  .number-section-mob > li {
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .handle-preloader .animation-preloader .spinner {
     height: 7em;
     width: 7em;
@@ -726,5 +729,8 @@
   .handle-preloader .animation-preloader .txt-loading .letters-loading {
     font-size: 30px;
     letter-spacing: 10px;
+  }
+  .header-top .left_side ul {
+    display: none;
   }
 }
