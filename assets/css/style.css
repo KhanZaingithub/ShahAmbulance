@@ -993,6 +993,15 @@ p {
   .spacing {
     padding: 60px 5px;
   }
+  .heroic-text {
+    font-size: 25px;
+    line-height: 35px;
+    width: 100%;
+  }
+  .text-container p {
+    width: 100%;
+    font-size: 16px;
+  }
   .btn-style {
     padding: 0px 20px;
   }
