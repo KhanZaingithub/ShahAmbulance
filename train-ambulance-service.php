@@ -13,7 +13,7 @@
 </head>
 
 
-<body>.
+<body>
 
     <div class="boxed_wrapper ltr">
 
