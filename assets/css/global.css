@@ -163,4 +163,7 @@ p {
     line-height: 36px;
     border-radius: 5px;
   }
+  .btn-style::before {
+    border-radius: 5px;
+  }
 }
