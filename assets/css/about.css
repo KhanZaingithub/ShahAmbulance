@@ -391,6 +391,9 @@
   .about-section .about-right .check-section {
     width: 100%;
   }
+  .lifesaving-section .bg-color {
+    padding: 40px 30px;
+  }
   .lifesaving-section .lifesaving-heading {
     margin-bottom: 5px;
   }
