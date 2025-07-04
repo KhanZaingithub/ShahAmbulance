@@ -60,6 +60,7 @@
 =============================================*/
 .about-section .about-container {
   gap: 0px 40px;
+  display: flex;
 }
 .about-section .about-left {
   position: relative;
@@ -331,6 +332,48 @@
   .breadcrumb-section {
     padding: 48px 0px;
   }
+  .about-section .about-container {
+    flex-wrap: wrap;
+  }
+  .about-section .about-container .about-left {
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+  .about-section .about-right .btn-cont {
+    margin-top: 20px;
+  }
+  .lifesaving-section .bg-color .custom-gap {
+    gap: 40px 0px;
+    flex-wrap: wrap;
+  }
+  .lifesaving-section .bg-color .custom-gap .md-border-0 {
+    border: 0px;
+  }
+  .lifesaving-section .counter-cont:hover .icon::after {
+    left: 39%;
+  }
+  .story-section .bottom-section {
+    flex-wrap: wrap;
+    gap: 0px 30px;
+  }
+  .story-section .bottom-section {
+    padding: 30px;
+    padding-bottom: 40px;
+  }
+  .story-section .core-value {
+    gap: 20px 0px;
+  }
+  .testinomial-section .left-section {
+    margin-bottom: 30px;
+  }
+  .testinomial-section .left-section,
+  .testinomial-section .right-section {
+    width: 100%;
+  }
+  .lead,
+  .testinomial-section .right-section .carousel .carousel-inner h5 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .breadcrumb-section .breadcrumb-img {
@@ -341,5 +384,30 @@
   }
   .breadcrumb-section .content h1 {
     font-size: 25px;
+  }
+  .about-section .about-right p {
+    font-size: 16px;
+  }
+  .about-section .about-right .check-section {
+    width: 100%;
+  }
+  .lifesaving-section .lifesaving-heading {
+    margin-bottom: 5px;
+  }
+  .lifesaving-section .counter-cont {
+    border: 0px;
+  }
+  .story-section .bottom-section {
+    gap: 20px 0px;
+  }
+  .story-section .core-value {
+    gap: 25px 0px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: block !important;
+  }
+  .carousel-control-prev {
+    left: 40%;
   }
 }
