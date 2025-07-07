@@ -1,0 +1,201 @@
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+/*=============================================
+    breadcrumb Section 
+=============================================*/
+.breadcrumb-section {
+  position: relative;
+  padding: 106px 0px;
+}
+.breadcrumb-section .breadcrumb-img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.breadcrumb-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--thm-primary);
+  opacity: 0.7;
+  z-index: 1;
+}
+.breadcrumb-section .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.breadcrumb-section .content h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  background: transparent;
+  justify-content: center;
+  margin: 0px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #fff !important;
+  font-weight: 600;
+}
+.breadcrumb .breadcrumb-item a:hover {
+  color: #d3d3d3 !important;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #d3d3d3 !important;
+  font-weight: 600;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+/*=============================================
+    breadcrumb Section End 
+=============================================*/
+
+/*=============================================
+    Contact Section 
+=============================================*/
+.contact-section .contact-col {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px 0px rgba(206, 196, 196, 0.45);
+  background: #eaeaea;
+  transition: transform 0.5s ease;
+  text-align: center;
+}
+.contact-section .contact-col i {
+  font-size: 40px;
+  color: var(--thm-base);
+  margin-bottom: 15px;
+}
+.contact-section .contact-col h4 {
+  font-size: 20px;
+  color: var(--thm-primary);
+}
+.contact-section .contact-col a {
+  color: var(--thm-gray);
+}
+.contact-section .contact-col .number {
+  font-size: 20px;
+}
+/*=============================================
+    Contact Section End
+=============================================*/
+
+/*=============================================
+    Form Section 
+=============================================*/
+.form-section .contact-left p {
+  margin: 5px 0px 20px 0px;
+}
+
+.contact-section .contact-left p {
+  margin-bottom: 20px;
+}
+
+.contact-section .contact-left {
+  padding-right: 25px;
+}
+
+.form-section .contact-right {
+  padding-left: 25px;
+}
+
+.form-control {
+  padding: 5px 8px;
+  background: #f7f7f7;
+  height: 40px;
+}
+
+.form-control:focus {
+  border: 1px solid #333;
+  box-shadow: none;
+  background: #f7f7f7;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+.form-submit {
+  margin-top: 20px;
+  border: none;
+  background: none;
+}
+
+.form-section .contact-right .contact-form {
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.form-section .contact-right .contact-form .input {
+  padding: 0px 5px;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*=============================================
+    Form Section End
+=============================================*/
+
+/*=============================================
+    Map Section
+=============================================*/
+
+.map-section iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+/*=============================================
+    Map Section End
+=============================================*/
+
+@media screen and (max-width: 1025px) {
+  .pt-60 {
+    padding-top: 30px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .breadcrumb-section {
+    padding: 48px 0px;
+  }
+  .contact-section > .container > .row {
+    gap: 24px 0px;
+  }
+  .form-section .contact-left {
+    margin-bottom: 40px;
+  }
+  .form-section .contact-right {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb-section .breadcrumb-img {
+    height: 150px;
+  }
+  .breadcrumb-section {
+    padding: 43px 0px;
+  }
+  .breadcrumb-section .content h1 {
+    font-size: 25px;
+  }
+  .form-section .contact-left {
+    margin-bottom: 30px;
+  }
+}
