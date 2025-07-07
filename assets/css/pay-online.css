@@ -1,0 +1,86 @@
+/*=============================================
+   Banner-section       
+=============================================*/
+.breadcrumb-section {
+  position: relative;
+  padding: 106px 0px;
+}
+.breadcrumb-section .breadcrumb-img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.breadcrumb-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--thm-primary);
+  opacity: 0.7;
+  z-index: 1;
+}
+.breadcrumb-section .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.breadcrumb-section .content h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  background: transparent;
+  justify-content: center;
+  margin: 0px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #fff !important;
+  font-weight: 600;
+}
+.breadcrumb .breadcrumb-item a:hover {
+  color: #d3d3d3 !important;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #d3d3d3 !important;
+  font-weight: 600;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+.payment-section h2 {
+  margin-bottom: 10px;
+}
+.payment-section .detail-list li {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.payment-section .scanner {
+  text-align: center;
+}
+.payment-section .scanner img {
+  height: 450px;
+}
+@media screen and (max-width: 1025px) {
+  .breadcrumb-section {
+    padding: 48px 0px;
+  }
+  .payment-section .scanner {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .breadcrumb-section .breadcrumb-img {
+    height: 150px;
+  }
+  .breadcrumb-section {
+    padding: 43px 0px;
+  }
+  .breadcrumb-section .content h1 {
+    font-size: 25px;
+  }
+}
