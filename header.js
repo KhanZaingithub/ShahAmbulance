@@ -4,7 +4,6 @@
     =============================================*/
   var $body = $("body");
 
-
   $(window).on("scroll", function () {
     if ($(".header-area").length) {
       var windowpos = $(window).scrollTop();
@@ -139,6 +138,23 @@
         $this.closest("li").siblings("li").find("ul:visible").slideUp();
         $this.siblings("ul").slideDown();
       }
+    }
+  });
+
+  const currentPath = window.location.pathname.split("/").pop(); // Gets just the filename like "about-us.html"
+  const menuItems = document.querySelectorAll("nav a");
+
+  menuItems.forEach((item) => {
+    const itemPath = item.getAttribute("href");
+
+    // Compare only file names (ignores domain, etc.)
+    if (itemPath === currentPath) {
+      item.classList.add("current");
+      // Optional: also add class to parent li for dropdown highlighting
+      const parentLi = item.closest("li");
+      if (parentLi) parentLi.classList.add("current");
+    } else {
+      item.classList.remove("current");
     }
   });
 })(jQuery);

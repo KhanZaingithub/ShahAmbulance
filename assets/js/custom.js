@@ -28,47 +28,34 @@ let userInteracted = false;
 const stepsData = [
   {
     id: "Step 1",
-    title: "Call or Book Online",
+    title: "Nearest Unit Allocated Manually",
     description:
-      "Call for an ambulance or 24 hours ambulance service on website. We are always here for you in case you need an emergency ambulance service near you 24/7",
+      "Our operations team quickly assigns the closest available ambulance car, using our in-house coordination system.",
     // visualHtml: '<img src="https://i.imgur.com/KzM5nS7.png" alt="Cashflow dashboard showing income and expenses.">'
-    visualHtml:
-      '<div class="placeholder-visual"><i class="fa-solid fa-phone"></i></div>',
   },
   {
     id: "Step 2",
-    title: "Patient Details",
+    title: "Ambulance Dispatched Without Delay",
     description:
-      "Details regarding to patient's name, address, and current medical condition to ensure accurate identification, quick dispatch, and appropriate medical support based on the patient’s needs",
-    visualHtml: '<div class="placeholder-visual">Visual for Feature 02</div>',
+      "An ambulance is sent right away, guaranteeing an ambulance will respond anytime in Mumbai, Thane, or a nearby area",
   },
   {
     id: "Step 3",
-    title: "Location Based Dispatch",
+    title: "Medical Team Arrives for Support",
     description:
-      "Depending on your current location, whether it’s Mumbai Central, Navi Mumbai, Thane, Bangalore, or Hyderabad, we send the nearest private ambulance services.",
-    visualHtml: '<div class="placeholder-visual">Visual for Feature 03</div>',
+      "Our qualified team comes equipped with essential medical supplies, offering immediate care until transport to the hospital commences.",
   },
   {
     id: "Step 4",
-    title: "Ambulance Type Allocation",
+    title: "Patient Shifted to Hospital",
     description:
-      "We dispatch the ambulance as per the requirement ICUs ambulance, ventilator ambulance, oxygen ambulance and hearse van for funeral.",
-    visualHtml: '<div class="placeholder-visual">Visual for Feature 04</div>',
+      "We ensure safe and secure transport to the nearest or preferred hospital via our well-equipped ambulance service in Mumbai.",
   },
   {
     id: "Step 5",
-    title: "Medical Team and Equipment",
+    title: "Smooth Coordination Till Completion",
     description:
-      "Both ambulances are well-heeled for life-saving equipment and trained medical crew for cardiac, accident and patient transfer situations.",
-    visualHtml: '<div class="placeholder-visual">Visual for Feature 04</div>',
-  },
-  {
-    id: "Step 6",
-    title: "Flexible Payment",
-    description:
-      "Offers flexible payment options, allowing patients to choose from cash, online transfers or bank transfers, ensuring convenience during emergency situations.",
-    visualHtml: '<div class="placeholder-visual">Visual for Feature 04</div>',
+      "We maintain contact until the patient transfer is finished at the hospital. Your emergency receives complete attention.",
   },
 ];
 

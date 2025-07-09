@@ -21,7 +21,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
-
 /*============================================
 =           01.  Banner Section          =
 =============================================*/
@@ -428,6 +427,7 @@
   display: none;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   text-align: left;
 }
