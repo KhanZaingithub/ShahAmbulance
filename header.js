@@ -141,20 +141,36 @@
     }
   });
 
-  const currentPath = window.location.pathname.split("/").pop(); // Gets just the filename like "about-us.html"
+  const currentPath = window.location.pathname.split("/").pop(); // get filename only (e.g., 'about-us.html')
   const menuItems = document.querySelectorAll("nav a");
+  console.log(menuItems);
 
   menuItems.forEach((item) => {
-    const itemPath = item.getAttribute("href");
+    const href = item.getAttribute("href");
 
-    // Compare only file names (ignores domain, etc.)
-    if (itemPath === currentPath) {
+    // Skip empty or hash-only links
+    if (!href || href === "#") return;
+
+    const itemPath = href.split("/").pop(); // get just the file name from href
+
+    // Match current file or treat as prefix match (e.g., subpages)
+    if (
+      currentPath === itemPath ||
+      currentPath.startsWith(itemPath + "?") ||
+      currentPath.startsWith(itemPath + "#")
+    ) {
       item.classList.add("current");
-      // Optional: also add class to parent li for dropdown highlighting
-      const parentLi = item.closest("li");
-      if (parentLi) parentLi.classList.add("current");
+
+      // Highlight parent <li>
+      let parentLi = item.closest("li");
+      while (parentLi) {
+        parentLi.classList.add("current");
+        parentLi = parentLi.parentElement.closest("li");
+      }
     } else {
       item.classList.remove("current");
+      const parentLi = item.closest("li");
+      if (parentLi) parentLi.classList.remove("current");
     }
   });
 })(jQuery);
