@@ -641,9 +641,9 @@
 }
 .equipment-section .bottom-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px 15px;
 }
 .equipment-section .bottom-section .cont {
   box-shadow: 0px 4px 12px 0px rgba(206, 196, 196, 0.45);
