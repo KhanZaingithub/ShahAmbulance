@@ -319,4 +319,10 @@
   .service-section .service-right .inner h1 {
     font-size: 25px;
   }
+  .detail-section .detail .detail-col .inner .detail-list img {
+    height: 29px;
+  }
+  .detail-section .detail .detail-col .inner .detail-list .detail-icon {
+    align-items: center;
+  }
 }

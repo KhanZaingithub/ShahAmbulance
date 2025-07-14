@@ -27,9 +27,10 @@
   z-index: 2;
   text-align: center;
 }
-.breadcrumb-section .content h1 {
+.breadcrumb-section .content h2 {
   color: #fff;
   font-weight: 600;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 .breadcrumb {
@@ -127,8 +128,9 @@
 .lifesaving-section .top-section h4 {
   margin-bottom: 0px;
 }
-.about-section .about-right h2 {
+.about-section .about-right h1 {
   margin-bottom: 5px;
+  font-size: 35px;
 }
 .about-section .about-right p {
   font-size: 18px;
@@ -207,8 +209,8 @@
 }
 .lifesaving-section .bg-color h3 {
   color: var(--thm-base);
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
 }
 .lifesaving-section .btn-style span {
   color: #fff;
@@ -374,6 +376,9 @@
   .testinomial-section .right-section .carousel .carousel-inner h5 {
     font-size: 20px;
   }
+  .breadcrumb-section .content h2 {
+    font-size: 35px;
+  }
 }
 @media screen and (max-width: 767px) {
   .breadcrumb-section .breadcrumb-img {
@@ -412,5 +417,11 @@
   }
   .carousel-control-prev {
     left: 40%;
+  }
+  .breadcrumb-section .content h2 {
+    font-size: 25px;
+  }
+  .about-section .about-right h1 {
+    font-size: 25px;
   }
 }
